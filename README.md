@@ -41,6 +41,7 @@
 ☞ `ALIVE_MEDIA` - Telegraph link of media(photo/video/gif) to be displayed while using alive command.<br>
 
 ```
-If you are taking code from this repository without a fork, then atleast
-give credits to our hardwork & star to this repo. ❤️
+If you are taking code from this repository without a fork,
+then atleast give credits to our hardwork & star to this
+repository. ❤️
 ```
