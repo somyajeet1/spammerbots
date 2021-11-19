@@ -101,7 +101,7 @@ Syntax:
 i) {hn}leave <chat id>
 ii) {hn}leave
 
-**{hn}restart**: Restarts the bot!(Too fast! **Supersonic**)
+**{hn}reboot**: Restarts the bot!(Too fast! **Supersonic**)
 
 **©️ @TeamGladiators**
 """
