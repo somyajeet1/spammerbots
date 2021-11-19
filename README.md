@@ -3,6 +3,18 @@
   <img src="resources/Gladiators.jpeg" alt="Logo">
 </p>
 
+### 🚀 Gʟᴀᴅɪᴀᴛᴏʀs sᴘᴀᴍᴍᴇʀʙᴏᴛs
+  <a href="https://github.com/Gladiators-Projects"><img alt="Website" src="https://img.shields.io/badge/Gladiators-Projects-blue"></a>
+  [![Stars](https://img.shields.io/github/stars/Gladiators-Projects/spammerbots?style=social)](https://github.com/Gladiators-Projects/spammerbots/stargazers)
+  [![Forks](https://img.shields.io/github/forks/Gladiators-Projects/spammerbots?style=social)](https://github.com/Gladiators-Projects/spammerbots/fork)
+
+### 🛠️ Lᴀɴɢᴜᴀɢᴇs Aɴᴅ Tᴏᴏʟs
+
+  ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+  ![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
+  ![Heroku](https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white)
+  
+
 ### 🎆Dᴇᴘʟᴏʏ Tᴏ Hᴇʀᴏᴋᴜ
   
   [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Gladiators-Projects/spammerbots)
@@ -10,7 +22,7 @@
 
 ### 🧿Gᴇɴᴇʀᴀᴛᴇ ᴛᴇʟᴇᴛʜᴏɴ sᴇssɪᴏɴ
   
-  [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Gladiators-Projects/spammerbots)
+  [![Run on Repl.it](https://replit.com/badge/github/TeamUltroid/Ultroid)](https://replit.com/@Acinonyx/Telethon-Bot-Session#sessiongen.py)
 
 
 ## 🗒️ Nᴇᴄᴇssᴀʀʏ Vᴀʀɪᴀʙʟᴇs
@@ -27,3 +39,7 @@
 ☞ `DEV_USERS` - User id of all dev users separated by space " ".<br>
 ☞ `ALIVE_MESSAGE` - Message to be displayed while using alive command.<br>
 ☞ `ALIVE_MEDIA` - Telegraph link of media(photo/video/gif) to be displayed while using alive command.<br>
+
+```
+If you are taking code from this repository without a fork, then atleast give credits to our hardwork & star to this repo. ❤️
+```
