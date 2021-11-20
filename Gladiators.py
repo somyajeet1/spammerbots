@@ -2382,6 +2382,109 @@ async def bigspam(e):
         else:
             await e.reply(usage)
 
+@Bot1.on(events.NewMessage(incoming=True, pattern=r"\%suspam(?: |$)(.*)" % hn))
+@Bot2.on(events.NewMessage(incoming=True, pattern=r"\%suspam(?: |$)(.*)" % hn))
+@Bot3.on(events.NewMessage(incoming=True, pattern=r"\%suspam(?: |$)(.*)" % hn))
+@Bot4.on(events.NewMessage(incoming=True, pattern=r"\%suspam(?: |$)(.*)" % hn))
+@Bot5.on(events.NewMessage(incoming=True, pattern=r"\%suspam(?: |$)(.*)" % hn))
+@Bot6.on(events.NewMessage(incoming=True, pattern=r"\%suspam(?: |$)(.*)" % hn))
+@Bot7.on(events.NewMessage(incoming=True, pattern=r"\%suspam(?: |$)(.*)" % hn))
+@Bot8.on(events.NewMessage(incoming=True, pattern=r"\%suspam(?: |$)(.*)" % hn))
+@Bot9.on(events.NewMessage(incoming=True, pattern=r"\%suspam(?: |$)(.*)" % hn))
+@Bot10.on(events.NewMessage(incoming=True, pattern=r"\%suspam(?: |$)(.*)" % hn))
+@Bot11.on(events.NewMessage(incoming=True, pattern=r"\%suspam(?: |$)(.*)" % hn))
+@Bot12.on(events.NewMessage(incoming=True, pattern=r"\%suspam(?: |$)(.*)" % hn))
+@Bot13.on(events.NewMessage(incoming=True, pattern=r"\%suspam(?: |$)(.*)" % hn))
+@Bot14.on(events.NewMessage(incoming=True, pattern=r"\%suspam(?: |$)(.*)" % hn))
+@Bot15.on(events.NewMessage(incoming=True, pattern=r"\%suspam(?: |$)(.*)" % hn))
+@Bot16.on(events.NewMessage(incoming=True, pattern=r"\%suspam(?: |$)(.*)" % hn))
+@Bot17.on(events.NewMessage(incoming=True, pattern=r"\%suspam(?: |$)(.*)" % hn))
+@Bot18.on(events.NewMessage(incoming=True, pattern=r"\%suspam(?: |$)(.*)" % hn))
+@Bot19.on(events.NewMessage(incoming=True, pattern=r"\%suspam(?: |$)(.*)" % hn))
+@Bot20.on(events.NewMessage(incoming=True, pattern=r"\%suspam(?: |$)(.*)" % hn))
+@Bot21.on(events.NewMessage(incoming=True, pattern=r"\%suspam(?: |$)(.*)" % hn))
+@Bot22.on(events.NewMessage(incoming=True, pattern=r"\%suspam(?: |$)(.*)" % hn))
+@Bot23.on(events.NewMessage(incoming=True, pattern=r"\%suspam(?: |$)(.*)" % hn))
+@Bot24.on(events.NewMessage(incoming=True, pattern=r"\%suspam(?: |$)(.*)" % hn))
+@Bot25.on(events.NewMessage(incoming=True, pattern=r"\%suspam(?: |$)(.*)" % hn))
+@Bot26.on(events.NewMessage(incoming=True, pattern=r"\%suspam(?: |$)(.*)" % hn))
+@Bot27.on(events.NewMessage(incoming=True, pattern=r"\%suspam(?: |$)(.*)" % hn))
+@Bot28.on(events.NewMessage(incoming=True, pattern=r"\%suspam(?: |$)(.*)" % hn))
+@Bot29.on(events.NewMessage(incoming=True, pattern=r"\%suspam(?: |$)(.*)" % hn))
+@Bot30.on(events.NewMessage(incoming=True, pattern=r"\%suspam(?: |$)(.*)" % hn))
+@Bot31.on(events.NewMessage(incoming=True, pattern=r"\%suspam(?: |$)(.*)" % hn))
+@Bot32.on(events.NewMessage(incoming=True, pattern=r"\%suspam(?: |$)(.*)" % hn))
+@Bot33.on(events.NewMessage(incoming=True, pattern=r"\%suspam(?: |$)(.*)" % hn))
+@Bot34.on(events.NewMessage(incoming=True, pattern=r"\%suspam(?: |$)(.*)" % hn))
+@Bot35.on(events.NewMessage(incoming=True, pattern=r"\%suspam(?: |$)(.*)" % hn))
+@Bot36.on(events.NewMessage(incoming=True, pattern=r"\%suspam(?: |$)(.*)" % hn))
+@Bot37.on(events.NewMessage(incoming=True, pattern=r"\%suspam(?: |$)(.*)" % hn))
+@Bot38.on(events.NewMessage(incoming=True, pattern=r"\%suspam(?: |$)(.*)" % hn))
+@Bot39.on(events.NewMessage(incoming=True, pattern=r"\%suspam(?: |$)(.*)" % hn))
+@Bot40.on(events.NewMessage(incoming=True, pattern=r"\%suspam(?: |$)(.*)" % hn))
+@Bot41.on(events.NewMessage(incoming=True, pattern=r"\%suspam(?: |$)(.*)" % hn))
+@Bot42.on(events.NewMessage(incoming=True, pattern=r"\%suspam(?: |$)(.*)" % hn))
+@Bot43.on(events.NewMessage(incoming=True, pattern=r"\%suspam(?: |$)(.*)" % hn))
+@Bot44.on(events.NewMessage(incoming=True, pattern=r"\%suspam(?: |$)(.*)" % hn))
+@Bot45.on(events.NewMessage(incoming=True, pattern=r"\%suspam(?: |$)(.*)" % hn))
+@Bot46.on(events.NewMessage(incoming=True, pattern=r"\%suspam(?: |$)(.*)" % hn))
+@Bot47.on(events.NewMessage(incoming=True, pattern=r"\%suspam(?: |$)(.*)" % hn))
+@Bot48.on(events.NewMessage(incoming=True, pattern=r"\%suspam(?: |$)(.*)" % hn))
+@Bot49.on(events.NewMessage(incoming=True, pattern=r"\%suspam(?: |$)(.*)" % hn))
+@Bot50.on(events.NewMessage(incoming=True, pattern=r"\%suspam(?: |$)(.*)" % hn))
+@Bot51.on(events.NewMessage(incoming=True, pattern=r"\%suspam(?: |$)(.*)" % hn))
+@Bot52.on(events.NewMessage(incoming=True, pattern=r"\%suspam(?: |$)(.*)" % hn))
+@Bot53.on(events.NewMessage(incoming=True, pattern=r"\%suspam(?: |$)(.*)" % hn))
+@Bot54.on(events.NewMessage(incoming=True, pattern=r"\%suspam(?: |$)(.*)" % hn))
+@Bot55.on(events.NewMessage(incoming=True, pattern=r"\%suspam(?: |$)(.*)" % hn))
+@Bot56.on(events.NewMessage(incoming=True, pattern=r"\%suspam(?: |$)(.*)" % hn))
+@Bot57.on(events.NewMessage(incoming=True, pattern=r"\%suspam(?: |$)(.*)" % hn))
+@Bot58.on(events.NewMessage(incoming=True, pattern=r"\%suspam(?: |$)(.*)" % hn))
+@Bot59.on(events.NewMessage(incoming=True, pattern=r"\%suspam(?: |$)(.*)" % hn))
+@Bot60.on(events.NewMessage(incoming=True, pattern=r"\%suspam(?: |$)(.*)" % hn))
+@Bot61.on(events.NewMessage(incoming=True, pattern=r"\%suspam(?: |$)(.*)" % hn))
+@Bot62.on(events.NewMessage(incoming=True, pattern=r"\%suspam(?: |$)(.*)" % hn))
+@Bot63.on(events.NewMessage(incoming=True, pattern=r"\%suspam(?: |$)(.*)" % hn))
+@Bot64.on(events.NewMessage(incoming=True, pattern=r"\%suspam(?: |$)(.*)" % hn))
+@Bot65.on(events.NewMessage(incoming=True, pattern=r"\%suspam(?: |$)(.*)" % hn))
+@Bot66.on(events.NewMessage(incoming=True, pattern=r"\%suspam(?: |$)(.*)" % hn))
+@Bot67.on(events.NewMessage(incoming=True, pattern=r"\%suspam(?: |$)(.*)" % hn))
+@Bot68.on(events.NewMessage(incoming=True, pattern=r"\%suspam(?: |$)(.*)" % hn))
+@Bot69.on(events.NewMessage(incoming=True, pattern=r"\%suspam(?: |$)(.*)" % hn))
+@Bot70.on(events.NewMessage(incoming=True, pattern=r"\%suspam(?: |$)(.*)" % hn))
+async def uspam(e):
+    usage = f"**🧿Wʀᴏɴɢ Usᴀɢᴇ🧿**\n\nUsᴇ: ```{hn}help spamcmds``` Tᴏ ᴋɴᴏᴡ ᴜsᴀɢᴇ ᴏғ ᴀʟʟ sᴘᴀᴍ ᴄᴏᴍᴍᴀɴᴅs."
+    if e.sender_id in SUDO_USERS or e.sender_id in DEV_USERS:
+        if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
+            return await e.reply(usage, parse_mode=None, link_preview=None )
+        gladbot = e.text.split(" ", 1)
+        bitxh = await e.get_reply_message()
+        x = 0
+        if len(gladbot) == 2:
+            msg = str(gladbot[1])
+            while x == 0:
+                async with e.client.action(e.chat_id, "typing"):
+                    await e.respond(msg, reply_to=e.reply_to_msg_id)
+                    await asyncio.sleep(0.3)
+        elif e.reply_to_msg_id and bitxh.media:  
+            while x == 0:
+                async with e.client.action(e.chat_id, "document"):
+                    bitxh = await e.client.send_file(e.chat_id, bitxh, caption=bitxh.text)
+                    await ifgif(e, bitxh) 
+                await asyncio.sleep(0.3)  
+        elif e.reply_to_msg_id and bitxh.text:
+            message = bitxh.text
+            while x == 0:
+                async with e.client.action(e.chat_id, "typing"):
+                    try:
+                        await e.client.send_message(e.chat_id, message)
+                    except:
+                        pass
+                    await asyncio.sleep(0.3)
+        else:
+            await e.reply(usage)
+
+ 
 @Bot1.on(events.NewMessage(incoming=True, pattern=r"\%spackspam" % hn))
 @Bot2.on(events.NewMessage(incoming=True, pattern=r"\%spackspam" % hn))
 @Bot3.on(events.NewMessage(incoming=True, pattern=r"\%spackspam" % hn))
