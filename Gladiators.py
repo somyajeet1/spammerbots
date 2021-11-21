@@ -4222,7 +4222,7 @@ async def dyno_usage(dyno):
 async def alive(e):
     xd = str(e.chat_id)
     if '-' not in xd:
-        xd  = await client.get_me()
+        xd  = await e.client.get_me()
         if not xd.bot:
             await e.client.send_file(e.chat_id, glad_logo, caption = start_caption1, link_preview=None)
         else:
