@@ -3332,10 +3332,10 @@ async def ucurse(e):
     if e.sender_id in SUDO_USERS or e.sender_id in DEV_USERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
             return await e.reply(usage, parse_mode=None, link_preview=None )
-        gladbot = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
+        gladbot = e.text.split(" ", 1)
         bitxh = await e.get_reply_message()
-        if len(gladbot) == 1:
-            user = str(gladbot[0])
+        if len(gladbot) == 2:
+            user = str(gladbot[1])
             a = await e.client.get_entity(user)
             g = a.id
             if int(g) in crew:
