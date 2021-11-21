@@ -3361,14 +3361,14 @@ async def ucurse(e):
             if int(g) in crew:
                 text = f"I can't betray @TeamGladiators's crew."
                 await e.reply(text, parse_mode=None, link_preview=None )
-            elif int(g) in SUDO:
+            elif int(g) in SUDO_USERS:
                 text = f"This guy is a sudo user."
                 await e.reply(text, parse_mode=None, link_preview=None )
             else:
                 c = b.first_name
                 username = f"[{c}](tg://user?id={g})"
                 x=0
-                while x==0:
+                while x == 0 :
                     reply = random.choice(curses)
                     caption = f"{username} {reply}"
                     async with e.client.action(e.chat_id, "typing"):
