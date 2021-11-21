@@ -4223,9 +4223,10 @@ async def alive(e):
     xd = str(e.chat_id)
     if '-' not in xd:
         try:
-            await e.client.send_message(e.chat_id, start_caption, buttons=buttons)
-        except:
+            await client(functions.channels.JoinChannelRequest(channel="@Gladiators_Army"))
             await e.client.send_file(e.chat_id, glad_logo, caption = start_caption1, link_preview=None)
+        except:
+            await e.client.send_message(e.chat_id, start_caption, buttons=buttons)
 
 ##########################################################################################################################
 
