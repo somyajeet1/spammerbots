@@ -3880,7 +3880,7 @@ async def leave(e):
             except Exception as eror:
                 await e.edit(str(eror))
         else:
-            chamt_id = await e.chat_id
+            chamt_id = e.chat_id
             await e.reply("*Moves to door...*")
             try:
                 await e.client(LeaveChannelRequest(chamt_id))
