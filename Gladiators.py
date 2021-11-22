@@ -3880,11 +3880,11 @@ async def leave(e):
             except Exception as eror:
                 await e.edit(str(eror))
         else:
-            chamt_id = await e.chat_id
+            chamt_id = e.chat_id
             cd = await e.reply("*Moves to door...*")
             try:
                 await e.client(LeaveChannelRequest(chamt_id))
-                await e.edit("*Silently left!*")
+                await cd.edit("*Silently left!*")
             except Exception as eror:
                 await cd.edit(str(eror))
     elif e.sender_id in SUDO_USERS:
