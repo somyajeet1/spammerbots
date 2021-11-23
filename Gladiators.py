@@ -6,6 +6,7 @@ import heroku3
 import requests
 import time
 from datetime import datetime
+import git
 from telethon import TelegramClient
 from telethon import events, Button
 from telethon import utils
@@ -4692,7 +4693,98 @@ async def _(e):
         else:
             await e.reply(accusage, parse_mode=None, link_preview=None )
 
+##########################################################################################################################
+###################################################### UPDATE ############################################################
+REPO_REMOTE_NAME = "gladtemp"
+OFFICIAL_UPSTREAM_REPO = "https://github.com/Gladiators-Projects/spammerbots"
 
+@Bot1.on(events.NewMessage(incoming=True, pattern=r"\%supdate(?: |$)(.*)" % hn))
+async def update(e):
+    try:
+        repo = git.Repo()
+    except git.exc.InvalidGitRepositoryError as e:
+        repo = git.Repo.init()
+        origin = repo.create_remote(REPO_REMOTE_NAME, OFFICIAL_UPSTREAM_REPO)
+        origin.fetch()
+        repo.create_head(IFFUCI_ACTIVE_BRANCH_NAME, origin.refs.master)
+        repo.heads.master.checkout(True)
+
+    glad_branch = repo.active_branch.name
+    if glad_branch != "master"  or glad_branch != "dev":
+        await message.edit()
+        return False
+
+    try:
+        repo.create_remote(REPO_REMOTE_NAME, OFFICIAL_UPSTREAM_REPO)
+    except Exception as e:
+        print(e)
+
+    temp_upstream_remote = repo.remote(REPO_REMOTE_NAME)
+    temp_upstream_remote.fetch(glad_branch)
+
+    changelog = generate_change_log(
+        repo,
+        "HEAD..{remote_name}/{branch_name}".format(
+            remote_name=REPO_REMOTE_NAME, branch_name=glad_branch
+        ),
+    )
+
+    if not changelog:
+        await message.edit("`Updation in Progress......`")
+        await asyncio.sleep(5)
+
+    message_one = "Found one update!\nAuthor: @TeamGladiators\nChangelog:\n{changelog}".format(changelog=changelog)
+    message_two = "New update found for {gladbranch} branch.\n".format(gladbranch=glad_branch)
+
+    if len(message_one) > 4095:
+        with open("change.log", "w+", encoding="utf8") as out_file:
+            out_file.write(str(message_one))
+        await Bot1.send_message(
+            e.chat_id, document="change.log", caption=message_two
+        )
+        os.remove("change.log")
+    else:
+        await message.edit(message_one)
+
+    temp_upstream_remote.fetch(active_branch_name)
+    repo.git.reset("--hard", "FETCH_HEAD")
+
+    if HEROKU_API_KEY is not None:
+
+        heroku = heroku3.from_key(HEROKU_API_KEY)
+        heroku_applications = heroku.apps()
+        if len(heroku_applications) >= 1:
+            if HEROKU_APP_NAME is not None:
+                heroku_app = None
+                for i in heroku_applications:
+                    if i.name == HEROKU_APP_NAME:
+                        heroku_app = i
+                if heroku_app is None:
+                    await e.edit(
+                        "Invalid APP Name. Please set the name of your bot in heroku in the var `HEROKU_APP_NAME.`"
+                    )
+                    return
+                heroku_git_url = heroku_app.git_url.replace(
+                    "https://", "https://api:" + HEROKU_API_KEY + "@"
+                )
+                if "heroku" in repo.remotes:
+                    remote = repo.remote("heroku")
+                    remote.set_url(heroku_git_url)
+                else:
+                    remote = repo.create_remote("heroku", heroku_git_url)
+                asyncio.get_event_loop().create_task(
+                    deploy_start(Riz, message, HEROKU_GIT_REF_SPEC, remote)
+                )
+
+            else:
+                await e.edit(
+                    "Please create the var `HEROKU_APP_NAME` as the key and the name of your bot in heroku as your value."
+                )
+                return
+        else:
+            await e.edit("No heroku app found but a key was given.")
+    else:
+        await message.edit("No heroku api key found in `HEROKU_API_KEY` var")
 
 ##########################################################################################################################
 ################################################## RESTART ###############################################################
